@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #f10d8b;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('LoanPVR.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Loan Application PVR - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Loan PVR start-->
+
+        <!-- Load PVR View Start-->
+        <tr>
+            <td><span>Loan PVR View </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/pvr/View/:AppID
+            </td>
+            <td rowspan="1">vw_LoanApplication, tbl_PVRMaster, tbl_PVRCropDetails, tbl_PVREncumbranceReport,
+                tbl_PVROwnerDetails</td>
+            <td>
+                <span class="shortDescription">View PVR Details by AppID</span>
+            </td>
+        </tr>
+        <!-- Loan PVR View End -->
+
+
+        <!-- Add Application start-->
+        <tr>
+            <td><span>Loan PVR</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>loan/pvr/createBy/:AppID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "TotalLandSize" : 23000,<br>
+                            "OwnerRemarks" : "OwnerRemarks",<br>
+                            "PropertyRemarks" : "PropertyRemarks",<br>
+                            "PVRPropertyStatus": "Verified",<br>
+                            "PVRRiskMeterStatus" : "PVRRiskMeterStatus",<br>
+                            "EncumbranceRemarks": "EncumbranceRemarks",<br>
+                            "PVRRiskMeterStatus": "PVRRiskMeterStatus",<br>
+                            "PVRStatusLine1": "PVRStatusLine1",<br>
+                            "PVRStatusLine2": "PVRStatusLine2",<br>
+                            "CreatedBy": 20,<br>
+                            "CropDetails":[<br>
+                            {"Year":"2015 - 2016","Season":"Kharif","Crop":"Dangar","Area":"2100","MSP": null},<br>
+                            {"Year":"2015 - 2016","Season":"Kharif","Crop":"Maize","Area":"10000","MSP":"1325"},<br>
+                            {"Year":"2015 - 2016","Season":"Kharif","Crop":"Dangar","Area":"2100","MSP":" "},<br>
+                            {"Year":"2015 - 2016","Season":"Kharif","Crop":"Maize","Area":"10000","MSP":"1365"},<br>
+                            {"Year":"2015 - 2016","Season":"Kharif","Crop":"Dangar","Area":"2100","MSP":" "},<br>
+                            {"Year":"2015 - 2016","Season":"Kharif","Crop":"Maize","Area":"10000","MSP":"1425"}<br>
+                            ],<br>
+                            "EncumbranceDetails":[<br>
+                            {"LoanTakenBy":"Dilipbhai
+                            Jagabhai","LoanAmount":"25000","LoanTakenOn":"21/01/2013","LoanGivenBy":"Meet"},<br>
+                            {"LoanTakenBy":"Prabhatbhai
+                            Jagabhai","LoanAmount":"25000","LoanTakenOn":"21/01/2013","LoanGivenBy":"Meet"},<br>
+                            {"LoanTakenBy":"Rangitbhai
+                            Jagabhai","LoanAmount":"25000","LoanTakenOn":"21/01/2013","LoanGivenBy":"Meet"},<br>
+                            {"LoanTakenBy":"Narvatbhai
+                            Jagabhai","LoanAmount":"25000","LoanTakenOn":"21/01/2013","LoanGivenBy":"Meet"}<br>
+                            ],<br>
+                            "OwnerCoOwnersName" : [<br>
+                            {<br>
+                            "OwnersName" : "Dilipbhai Jagabhai"<br>
+                            },<br>
+                            {<br>
+                            "OwnersName" : "Rangitbhai Jagabhai"<br>
+                            },<br>
+                            {<br>
+                            "OwnersName" : "Narvatbhai Jagabhai"<br>
+                            },<br>
+                            {<br>
+                            "OwnersName" : "Prabhatbhai Jagabhai"<br>
+                            }<br>
+                            ]<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PVRMaster, sp_POST_PVRDetails</td>
+            <td>
+                <span class="shortDescription">Add Loan PVR by AppID</span>
+            </td>
+        </tr>
+
+        <!-- Loan PVR Add END -->
+
+
+
+        <!-- Add Application start-->
+        <tr>
+            <td><span>Loan PVR Upload</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>loan/pvr/Genrate/:AppID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            Description:Hi<br>
+                            UserID:1<br>
+                            FileType:PDF<br>
+                            FileName:Name345.pdf<br>
+                            CreatedBy:1<br>
+                            uploadfile:file<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_PVRMaster, sp_POST_PropertyDocument, vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription">Upload PVR by AppID</span>
+            </td>
+        </tr>
+
+        <!-- Loan PVR Add END -->
+
+        <tr>
+            <td><span>Loan PVR Genrate and SAVE</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/pvr/Genrate/:AppID
+
+            </td>
+            <td rowspan="1">tbl_PVRMaster, sp_POST_PropertyDocument, vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription">Genrate PVR By APP ID and save</span>
+            </td>
+        </tr>
+        <!-- Loan PVR END -->
+
+        <!-- Loan PVR Add END Merge -->
+
+        <tr>
+            <td><span>Loan PVR Genrate , merge and SAVE</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/pvr/Genrate/merge/:AppID
+            </td>
+            <td rowspan="1">tbl_PVRMaster, sp_POST_PropertyDocument, vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription">Genrate PVR By APP ID then merge (With All Loan Property Document)and
+                    save</span>
+            </td>
+        </tr>
+        <!-- Loan PVR END -->
+
+    </table>
+</body>
+
+</html>

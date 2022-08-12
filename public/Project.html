@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                hostpathElements[i].innerText = window.location + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit - Property</div>
+
+    <table align="center" name="table">
+        <!-- Add new Property Start -->
+        <tr>
+            <th colspan="2">Add New Property</th>
+        </tr>
+        <tr>
+            <td><span class="post">Request Data</span></td>
+            <td>
+                {<br>&emsp;
+                "UserID": "1",<br>&emsp;
+                "PropertyTypeID": "1",<br>&emsp;
+                "VillageID": "1",<br>&emsp;
+                "TalukaID": "1",<br>&emsp;
+                "DistrictID": "1",<br>&emsp;
+                "StateID": "7",<br>&emsp;
+                "PropertyName": "PropertyName",<br>&emsp;
+                "CitySurveyNo": "CitySurveyNo",<br>&emsp;
+                "CitySurveyOffice": "CitySurveyOffice",<br>&emsp;
+                "CityWardNo": "CityWardNo",<br>&emsp;
+                "CityWardName": "CityWardName",<br>&emsp;
+                "SheetNumber": "SheetNumber",<br>&emsp;
+                "SurveyNo": "SurveyNo",<br>&emsp;
+                "TPNo": "TPNo",<br>&emsp;
+                "FPNo": "FPNo",<br>&emsp;
+                "BuildingNo": "Building/Block/Shed/Flat No.",<br>&emsp;
+                "BuildingName": "Society/Sector/Bungalow/Building Name",<br>&emsp;
+                "RecordDate": "2020-10-07",<br>&emsp;
+                "milkatno_propId": "milkatno_propId",<br>&emsp;
+                "RevenewOfficeType": "Talati / Gram Panchayat or Municipal Corporation / Nagarpalika Office",<br>&emsp;
+                "PostalAddress": "PostalAddress",<br>&emsp;
+                "Description": "Description",<br>&emsp;
+                "LandSize": "LandSize",<br>&emsp;
+                "WaterAvailabitity": "24 Hours Available",<br>&emsp;
+                "StatusOfElectricity": "No PowerCut, Rare PoweCut, Every Sunday Power Cut",<br>&emsp;
+                "AgeOfProperty": "10",<br>&emsp;
+                "NoOfBHK": "3",<br>&emsp;
+                "FurnishType": "Full Furnished, Semi Furnished, UnFurnished",<br>&emsp;
+                "OwnerShip": [<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "OwnerName": "OwnerName",<br>&emsp;&emsp;
+                "SinceFrom": "2012-12-12"<br>&emsp;&emsp;
+                },<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "OwnerName": "OwnerName",<br>&emsp;&emsp;
+                "SinceFrom": "2012-12-12"<br>&emsp;&emsp;
+                }<br>&emsp;&emsp;
+                ],<br>&emsp;
+                "InCharge": [<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "InChargeName": "Name",<br>&emsp;&emsp;
+                "Designation": "Hi",<br>&emsp;&emsp;
+                "InChargeType": "Main In Charge, Assigned In Charge, Local Office In Charge",<br>&emsp;&emsp;
+                "MobileNo": "123",<br>&emsp;&emsp;
+                "Email": "123",<br>&emsp;&emsp;
+                "Address": "Address",<br>&emsp;&emsp;
+                "InChargeFromDate": "2020-09-01"<br>&emsp;&emsp;
+                },<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "InChargeName": "Name",<br>&emsp;&emsp;
+                "Designation": "Hi",<br>&emsp;&emsp;
+                "InChargeType": "Main In Charge, Assigned In Charge, Local Office In Charge",<br>&emsp;&emsp;
+                "MobileNo": "123",<br>&emsp;&emsp;
+                "Email": "123",<br>&emsp;&emsp;
+                "Address": "Address",<br>&emsp;&emsp;
+                "InChargeFromDate": "2020-09-01"<br>&emsp;&emsp;
+                }<br>&emsp;
+                ],<br>
+                "TrustID": 1,<br>
+                "CreatedBy": 1<br>
+                }<br>
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Update Property Property</th>
+        </tr>
+        <tr>
+            <td><span class="put">Request Data</span></td>
+            <td>
+                {<br>&emsp;
+                "UserID": "1",<br>&emsp;
+                "PropertyTypeID": "1",<br>&emsp;
+                "VillageID": "1",<br>&emsp;
+                "TalukaID": "1",<br>&emsp;
+                "DistrictID": "1",<br>&emsp;
+                "StateID": "7",<br>&emsp;
+                "PropertyName": "PropertyName",<br>&emsp;
+                "CitySurveyNo": "CitySurveyNo",<br>&emsp;
+                "CitySurveyOffice": "CitySurveyOffice",<br>&emsp;
+                "CityWardNo": "CityWardNo",<br>&emsp;
+                "CityWardName": "CityWardName",<br>&emsp;
+                "SheetNumber": "SheetNumber",<br>&emsp;
+                "SurveyNo": "SurveyNo",<br>&emsp;
+                "TPNo": "TPNo",<br>&emsp;
+                "FPNo": "FPNo",<br>&emsp;
+                "BuildingNo": "Building/Block/Shed/Flat No.",<br>&emsp;
+                "BuildingName": "Society/Sector/Bungalow/Building Name",<br>&emsp;
+                "RecordDate": "2020-10-07",<br>&emsp;
+                "milkatno_propId": "milkatno_propId",<br>&emsp;
+                "RevenewOfficeType": "Talati / Gram Panchayat or Municipal Corporation / Nagarpalika Office",<br>&emsp;
+                "PostalAddress": "PostalAddress",<br>&emsp;
+                "Description": "Description",<br>&emsp;
+                "LandSize": "LandSize",<br>&emsp;
+                "WaterAvailabitity": "24 Hours Available",<br>&emsp;
+                "StatusOfElectricity": "No PowerCut, Rare PoweCut, Every Sunday Power Cut",<br>&emsp;
+                "AgeOfProperty": "10",<br>&emsp;
+                "NoOfBHK": "3",<br>&emsp;
+                "FurnishType": "Full Furnished, Semi Furnished, UnFurnished",<br>&emsp;
+                "OwnerShip": [<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "OwnerName": "OwnerName",<br>&emsp;&emsp;
+                "SinceFrom": "2012-12-12"<br>&emsp;&emsp;
+                },<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "OwnerName": "OwnerName",<br>&emsp;&emsp;
+                "SinceFrom": "2012-12-12"<br>&emsp;&emsp;
+                }<br>&emsp;&emsp;
+                ],<br>&emsp;
+                "InCharge": [<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "InChargeName": "Name",<br>&emsp;&emsp;
+                "Designation": "Hi",<br>&emsp;&emsp;
+                "InChargeType": "Main In Charge, Assigned In Charge, Local Office In Charge",<br>&emsp;&emsp;
+                "MobileNo": "123",<br>&emsp;&emsp;
+                "Email": "123",<br>&emsp;&emsp;
+                "Address": "Address",<br>&emsp;&emsp;
+                "InChargeFromDate": "2020-09-01"<br>&emsp;&emsp;
+                },<br>&emsp;&emsp;
+                {<br>&emsp;&emsp;
+                "InChargeName": "Name",<br>&emsp;&emsp;
+                "Designation": "Hi",<br>&emsp;&emsp;
+                "InChargeType": "Main In Charge, Assigned In Charge, Local Office In Charge",<br>&emsp;&emsp;
+                "MobileNo": "123",<br>&emsp;&emsp;
+                "Email": "123",<br>&emsp;&emsp;
+                "Address": "Address",<br>&emsp;&emsp;
+                "InChargeFromDate": "2020-09-01"<br>&emsp;&emsp;
+                }<br>&emsp;
+                ],<br>&emsp;
+                "ModifiedBy": 1<br>
+                }<br>
+            </td>
+        </tr>
+
+
+        <!-- Add new Property END -->
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #69bdaf;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('PublicNotice.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Public Notice - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- language Start -->
+        <tr>
+            <td><span>Public Notice Language</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/language/all
+            </td>
+            <td rowspan="1">tbl_Language</td>
+            <td>
+                <span class="shortDescription">Language List</span>
+            </td>
+        </tr>
+        <!-- language End -->
+
+        <!-- NewsPaper Start -->
+        <tr>
+            <td><span>NewsPaper</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/newspaper/all
+            </td>
+            <td rowspan="1">tblNewspaper</td>
+            <td>
+                <span class="shortDescription">Newspaper List</span>
+            </td>
+        </tr>
+        <!-- NewsPaper End -->
+
+        <!-- Notice Format Start -->
+        <tr>
+            <td><span>Notice Formate List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/format/all
+            </td>
+            <td rowspan="1">tbl_PublicNoticeFormat</td>
+            <td>
+                <span class="shortDescription">Notice Format List</span>
+            </td>
+        </tr>
+        <!-- Notice Format End -->
+
+        <!-- Notice Format Start -->
+        <tr>
+            <td><span>Notice Formate List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/format/all
+            </td>
+            <td rowspan="1">tbl_PublicNoticeFormat</td>
+            <td>
+                <span class="shortDescription">Notice Format List</span>
+            </td>
+        </tr>
+        <!-- Notice Format End -->
+
+        <!-- Public Notice Add Start -->
+        <tr>
+            <td><span>Public Notice</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "AppID": 3,<br>
+                            "NoticeID": 15,<br>
+                            "NewspaperID": 456,<br>
+                            "PublishDate": "2021-01-10",<br>
+                            "Summary": "this is for testing application public notice",<br>
+                            "NoticeDays": 2,<br>
+                            "IsPublished": 1,<br>
+                            "CreatedBy": 50<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_ApplicationPublicNotice</td>
+            <td>
+                <span class="shortDescription">Add Public Notice</span>
+            </td>
+        </tr>
+        <!-- Public Notice Add End -->
+
+        <!-- Public Notice List Start -->
+        <tr>
+            <td><span>Public Notice List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/all
+            </td>
+            <td rowspan="1">tbl_ApplicationPublicNotice</td>
+            <td>
+                <span class="shortDescription">Lst Public Notice</span>
+            </td>
+        </tr>
+        <!-- Public Notice List  End -->
+
+        <!-- Public Notice Update Start -->
+        <tr>
+            <td><span>Public Notice</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/update/:publicNoticeId
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "AppID": 3,<br>
+                            "NoticeID": 15,<br>
+                            "NewspaperID": 456,<br>
+                            "PublishDate": "2021-01-10",<br>
+                            "Summary": "this is for testing application public notice",<br>
+                            "NoticeDays": 2,<br>
+                            "IsPublished": 1,<br>
+                            "ModifiedBy": 50<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_ApplicationPublicNotice</td>
+            <td>
+                <span class="shortDescription">Update Public Notice</span>
+            </td>
+        </tr>
+        <!-- Public Notice Update End -->
+
+        <!-- Public Notice Update Start -->
+        <tr>
+            <td><span>Public Notice</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/ispublished/status/:publicNoticeId
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "IsPublished": 1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_ApplicationPublicNotice</td>
+            <td>
+                <span class="shortDescription">Update Public Notice Status</span>
+            </td>
+        </tr>
+        <!-- Public Notice Update End -->
+
+
+        <!-- Public Notice Responce List Start -->
+        <tr>
+            <td><span>Public Notice</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/response/all
+            </td>
+            <td rowspan="1">tbl_PubliceNoticeResponce</td>
+            <td>
+                <span class="shortDescription">Public Notice Responce list</span>
+            </td>
+        </tr>
+        <!-- Public Notice Responce List End -->
+
+
+        <!-- Public Notice Responce Add -->
+        <tr>
+            <td><span>Public Notice</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>publicnotice/response/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "ApplicationNoticeID": 5,<br>
+                            "DocumentPath": "temporary document path",<br>
+                            "RespondentName": "jaimin patel",<br>
+                            "Comments": "temporary comment",<br>
+                            "CreatedBy": 97,<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PubliceNoticeResponce</td>
+            <td>
+                <span class="shortDescription">Public Notice Responce Add</span>
+            </td>
+        </tr>
+        <!-- Public Notice Update End -->
+    </table>
+</body>
+
+</html>

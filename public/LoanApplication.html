@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #630588;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('LoanApplication.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Loan Application - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Loan Application start-->
+
+        <!-- Load Type Start-->
+        <tr>
+            <td><span>Bank list </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/bank/list
+            </td>
+            <td rowspan="1">tbl_BankMaster</td>
+            <td>
+                <span class="shortDescription">Bank List</span>
+            </td>
+        </tr>
+        <!-- Loan Type End -->
+
+        <!-- Load Type Start-->
+        <tr>
+            <td><span>Loan Types </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/types
+            </td>
+            <td rowspan="1">vw_DropDownValue</td>
+            <td>
+                <span class="shortDescription">List Loan Types</span>
+            </td>
+        </tr>
+        <!-- Loan Type End -->
+
+
+        <!-- Load Property Type Start-->
+        <tr>
+            <td><span>Loan Property Types </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/Property/types
+            </td>
+            <td rowspan="1">vw_DropDownValue</td>
+            <td>
+                <span class="shortDescription">List Loan Property Types</span>
+            </td>
+        </tr>
+        <!-- Loan Property Type End -->
+
+
+        <!-- Load Assign Lawyer Start-->
+        <tr>
+            <td><span>Assign Lawyer </span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>loan/assign/lawyer/:AppID/:LawyerID
+            </td>
+            <td rowspan="1">tbl_Application</td>
+            <td>
+                <span class="shortDescription">Assign Lawyer by AppID</span>
+            </td>
+        </tr>
+        <!-- Loan Property Type End -->
+
+
+        <!-- Add Application start-->
+        <tr>
+            <td><span>Loan Applicatin </span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/create
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "ApplicationNo": "1234-5678-0428", <br>
+                            "CitySurveyNumber":"CitySurveyNumber"<br>
+                            "BankID": "2", <br>
+                            "BranchCode": "Lalbuglow", <br>
+                            "ApplicantFirstName": "Pooja", <span class="Required">*</span><br>
+                            "ApplicantLastName": "Joshi", <span class="Required">*</span><br>
+                            "MobileNo": "7016190648", <span class="Required">*</span><br>
+                            "Email": "meetrazor1994@gmail.com", <span class="Required">*</span><br>
+                            "IsOwnerSame": true,<br>
+                            "PropertyOwners": [{"OwnerName": "OwnerName1"},{"OwnerName": "OwnerName2"}],<br>
+                            "PropertyAddress": "Kamalpur", <br>
+                            "LoanPropertyTypeID":"26", <br>
+                            "VillageID" :"1", <br>
+                            "HobliID": "1",<br>
+                            "TalukaID" : "1", <br>
+                            "DistrictID": "1", <br>
+                            "HissaNo": "HissaNo",<br>
+                            "SurveyNo": "55", <br>
+                            "TpNo": "tp", <br>
+                            "FpNo": "", <br>
+                            "IsLien": true,<br>
+                            "TypeOfLoan": 22,"<br>
+                            "LienAmount": 30000,<br>
+                            "LienDate": "2019-07-06", <br>
+                            "LienPersonName": "one Name", <br>
+                            "LienFrom":"Meet", <br>
+                            "LoanAmount": "2000000"<br>
+                            "CreatedBy": 20<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_Post_LoanApplication, tbl_PropertyOwnerShip</td>
+            <td>
+                <span class="shortDescription">Add Loan Application</span>
+            </td>
+        </tr>
+
+        <!-- Add Application End -->
+
+
+        <!-- View Loan Application Start-->
+        <tr>
+            <td><span>Loan Application View </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/View/BankManager/:UserID
+            </td>
+            <td rowspan="1">vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription">List Loan Application by Bank Manger</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>Loan Application View </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/View/Applicant/:UserID
+            </td>
+            <td rowspan="1">vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription">List Loan Application by Applicant</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>Loan Application View </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/View/Lawyer/:UserID
+            </td>
+            <td rowspan="1">vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription">List Loan Application by Lawyer</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Loan Application View </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/View/Admin/:UserID
+            </td>
+            <td rowspan="1">vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription">List Loan Application by Admin</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Loan Application View </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/View/details/:AppID
+            </td>
+            <td rowspan="1">vw_LoanApplication</td>
+            <td>
+                <span class="shortDescription"> Loan Application by AppID</span>
+            </td>
+        </tr>
+
+        <!-- View Loan Application End-->
+
+        <!-- Change Loan Application Status -->
+        <tr>
+            <td><span>Loan Application Status</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/status/:AppID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "ApplicationStatus": "ApplicationStatus" <br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_Application</td>
+            <td>
+                <span class="shortDescription">Change Loan Application Status by AppID</span>
+            </td>
+        </tr>
+        <!-- View Loan Document STart -->
+
+
+        <!-- Loan Application END -->
+
+        <!-- GET Loan Application Required ID-->
+        <tr>
+            <td><span>GET ID For Add Loan Applicatin</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/ALL/ID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            <b>Example 1:</b><br>
+                            {<br>
+                            "StateName": null,<br>
+                            "DistrictName": "jamnagar",<br>
+                            "TalukaName": "jamnagar village",<br>
+                            "VillageName" : "jamnagar",<br>
+                            "BankName" : "SBI",<br>
+                            "LoanType" : "Home Loan",<br>
+                            "LoanPropertyType": "Residential (NA)"<br>
+                            }<br>
+                            <b>Example 2:</b><br>
+                            {
+                            "StateName": "Karnataka",<br>
+                            "DistrictName": "HASSAN",<br>
+                            "TalukaName": "ALUR",<br>
+                            "HobliName": "K HOSAKOTE",<br>
+                            "VillageName" : "ABBANA",<br>
+                            "BankName" : "SBI",<br>
+                            "LoanType" : "Home Loan",<br>
+                            "LoanPropertyType": "Residential (NA)"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_View_Application_AllID</td>
+            <td>
+                <span class="shortDescription">Fetch All id by Feild Name like (Fetch BankID by BankName)</span>
+            </td>
+        </tr>
+
+        <!-- Add Application End -->
+
+    </table>
+</body>
+
+</html>

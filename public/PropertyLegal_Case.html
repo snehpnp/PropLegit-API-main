@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #9CC3D5FF;
+            color: #0063B2FF;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('PropertyLegal_Case.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Legal Case - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Property Legal Case START -->
+
+        <!-- Property Legal Case Type START -->
+        <tr>
+            <td><span>Legal Case Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/legalcase/types/list
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCaseTypes</td>
+            <td>
+                <span class="shortDescription">Legal Case Type list
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Type END -->
+
+        <!-- Property Legal Case ADD START -->
+        <tr>
+            <td><span>Add Legal Case</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/case/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "CaseNumber":"CaseNumber" ,<br>
+                            "CaseType":"1",<br>
+                            "CaseDescription":"CaseDescription",<br>
+                            "Iam":"P",<br>
+                            "FilingDate":"2021-02-12",<br>
+                            "FilingNumber": "FilingNumber",<br>
+                            "RegistrationNumber":"RegistrationNumber",<br>
+                            "RegistrationDate":"2021-02-02",<br>
+                            "CNRNumber":"CNRNumber"<br>
+                            "CreatedBy": "20"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyLegalcase</td>
+            <td>
+                <span class="shortDescription">Add Legal Case by PropertyID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case ADD END -->
+
+        <!-- Property Legal Case View START -->
+        <tr>
+            <td><span>Legal Case View</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/case/list
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCase</td>
+            <td>
+                <span class="shortDescription">Legal Case list By PropertyID
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Legal Case Detail View</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/case/view/:LegalCaseID
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCase</td>
+            <td>
+                <span class="shortDescription">Legal Case Details By PropertyID and LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Legal Case Acts Detail View</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/details/:LegalCaseID
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCase, tbl_PropertyLegalCaseActs</td>
+            <td>
+                <span class="shortDescription">Legal Case Acts Details By LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case View END -->
+
+        <!-- Property Legal Case Update START -->
+        <tr>
+            <td><span>Update Legal Case</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/update/:LegalCaseID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "CaseNumber":"CaseNumber" ,<br>
+                            "CaseType":"1",<br>
+                            "CaseDescription":"CaseDescription",<br>
+                            "Iam":"P",<br>
+                            "FilingDate":"2021-02-12",<br>
+                            "FilingNumber": "FilingNumber",<br>
+                            "RegistrationNumber":"RegistrationNumber",<br>
+                            "RegistrationDate":"2021-02-02",<br>
+                            "CNRNumber":"CNRNumber"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCase</td>
+            <td>
+                <span class="shortDescription">Update Legal Case by PropertyID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Update END -->
+
+        <!-- Property Legal Case Delete START -->
+        <tr>
+            <td><span>Delete Legal Case</span></td>
+            <td><span class="delete">DELECT</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/delete/:LegalCaseID
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCase</td>
+            <td>
+                <span class="shortDescription">Delete Legal Case by PropertyID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Update END -->
+
+        <!-- Property Legal Case End -->
+
+
+        <!-- Property Legal Case Acts START -->
+        <!-- Property Legal Case Acts View START -->
+        <tr>
+            <td><span>Legal Case Acts View</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/acts
+            </td>
+            <td rowspan="1">tbl_PropertyLegalcaseActs</td>
+            <td>
+                <span class="shortDescription">View Legal Case Acts by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Acts View END -->
+
+        <!-- Property Legal Case Acts ADD START -->
+        <tr>
+            <td><span>Add Legal Case Acts</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/CaseActs
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "UnderAct" : "Land Laws And Agricultural Tenancies,3501",<br>
+                            "UnderSection" : "Matters relating to sale/transfer of land by SC/ST"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyLegalCaseActs</td>
+            <td>
+                <span class="shortDescription">Add Legal Case Acts by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Acts ADD END -->
+
+        <!-- Property Legal Case Acts End -->
+
+        <!-- Property Legal Case Hearing START -->
+        <!-- Property Legal Case Hearing ADD START -->
+        <tr>
+            <td><span>Add Legal Case Hearing</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/next-hearing
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "HearingDate":"2021-2-2",<br>
+                            "Judge":"Mr X",<br>
+                            "CourtName": "CourtName",<br>
+                            "CourtNumber":"CourtNumber",<br>
+                            "CourtAddress":"CourtAddress"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyLegalcaseHearing</td>
+            <td>
+                <span class="shortDescription">Add Legal Case Hearing by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Hearing ADD END -->
+        <!-- Property Legal Case Hearing View START -->
+        <tr>
+            <td><span>View Legal Case Hearing</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/current-hearing
+            </td>
+            <td rowspan="1">tbl_PropertyLegalcaseHearing</td>
+            <td>
+                <span class="shortDescription">View Legal Case Hearing by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Hearing View END -->
+
+        <!-- Property Legal Case Last Hearing View  START -->
+        <tr>
+            <td><span>View Legal Case Last Hearing</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/last-hearing
+            </td>
+            <td rowspan="1">tbl_PropertyLegalcaseHearing</td>
+            <td>
+                <span class="shortDescription">View Legal Case Last Hearing by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Hearing ADD END -->
+        <!-- Property Legal Case Hearing End -->
+
+
+        <!-- Property Legal Case Add Petitionet, Respondent and lawyer START -->
+
+        <!-- Property Legal Case Add Petitionet and lawyer START -->
+        <tr>
+            <td><span>Add Petitioner AND Lawyer</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/petitioner
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "Petitioner": [<br>
+                            {<br>
+                            "Name" : "Petitioner1",<br>
+                            "Email": "dotnettest@esmsys.com",<br>
+                            "Mobile": "8490999006"<br>
+                            },{<br>
+                            "Name" : "Petitioner1",<br>
+                            "Email": "dotnettest@esmsys.com",<br>
+                            "Mobile": "8490999006"<br>
+                            }<br>
+                            ],<br>
+                            "LawyerID": "99",<br>
+                            "CreatedBy": 20<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyLegalCasePetitionerAndRespondent</td>
+            <td>
+                <span class="shortDescription">Add Legal case Petitioner AND Lawyer by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>View Petitioner AND Lawyer</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/petitionersandlawyer
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCasePetitionerAndRespondent</td>
+            <td>
+                <span class="shortDescription">View Legal case Petitioner AND Lawyer by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Add Petitionet and lawyer END -->
+
+
+        <!-- Property Legal Case Add Respondent and lawyer START -->
+        <tr>
+            <td><span>Add Respondent AND Lawyer</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/respondent
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "Respondent": [<br>
+                            {<br>
+                            "Name" : "Respondent1",<br>
+                            "Email": "dotnettest@esmsys.com",<br>
+                            "Mobile": "8490999006"<br>
+                            },{<br>
+                            "Name" : "Respondent1",<br>
+                            "Email": "dotnettest@esmsys.com",<br>
+                            "Mobile": "8490999006"<br>
+                            }<br>
+                            ],<br>
+                            "LawyerID": "99",<br>
+                            "CreatedBy": 20<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyLegalCasePetitionerAndRespondent</td>
+            <td>
+                <span class="shortDescription">Add Legal case Respondent AND Lawyer by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>View Respondent AND Lawyer</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/case/:LegalCaseID/respondentsandlawyer
+            </td>
+            <td rowspan="1">tbl_PropertyLegalCasePetitionerAndRespondent</td>
+            <td>
+                <span class="shortDescription">View Legal case Respondent AND Lawyer by LegalCaseID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Add Petitionet and lawyer END -->
+
+        <!-- Property Legal Case Add Petitionet, Respondent and lawyer END -->
+
+    </table>
+</body>
+
+</html>

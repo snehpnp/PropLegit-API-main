@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #590c66;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('Auth.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- For Login/Sign In/Forgot password - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Demo start-->
+
+        <!-- Login Start -->
+        <tr>
+            <td><span>Login</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>login/register
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u></span><br>
+                            {<br>
+                            "EmailAddress" : "EmailAddress", <span class="Required"> Required</span><br>
+                            "Password" : "Password",<br>
+                            "FirstName" : "FirstName",<br>
+                            "LastName" : "LastName",<br>
+                            "MobileNumber" : "1",<span class="Required"> Required</span><br>
+                            "StateID" : "1",<br>
+                            "CreatedBy": 1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_usermaster</td>
+
+            <td>
+                <span class="shortDescription">Register User</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Login</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>generate/otp/:UserID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u></span><br>
+                            {<br>
+                            "TransactionType": "For Login",<br>
+                            "CreatedBy": 1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">pending..</td>
+
+            <td>
+                <span class="shortDescription">Generate otp and Send Email and SMS to User</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Login</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>login/verify
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u></span><br>
+                            {<br>
+                            <span class="Required">One field mandatory - email or Mobile Number</span><br>
+                            "EmailORMobile" : "1",<br>
+                            "Password" : "Password",<br>
+                            "TransactionType" : "For Login user",<br>
+                            "DeviceID": "DeviceID_123"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_usermaster</td>
+
+            <td>
+                <span class="shortDescription">Login Verify<br>
+                    IsDelete != 1<br>
+                    For Device Login(Mobile App) - DeviceID is Required</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Login</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>login/otp/verify
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u></span><br>
+                            {<br>
+                            "OTPLogID": "155",<br>
+                            "OTP": "212713"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_OTP_Verification</td>
+
+            <td>
+                <span class="shortDescription">Login - Verify OTP then send user details</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Login</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>validate/otp
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u></span><br>
+                            <i>Here ID is OTPLogID - You get OTPLogID from responce of POST Genrate OTP request</i><br>
+                            {<br>
+                            "Email": {<br>
+                            "ID": "49",<br>
+                            "OTP": "2ymQBX"<br>
+                            },<br>
+                            "SMS" : {<br>
+                            "ID": "50",<br>
+                            "OTP": "gNPG3o"<br>
+                            } <br>
+                            "ModifiedBy" : "1"<br>
+                            "DeviceID": "DeviceID_123"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_OTP_Verification</td>
+
+            <td>
+                <span class="shortDescription">OTP validation</span>
+            </td>
+        </tr>
+        <!-- Login End -->
+
+        <!-- Forgot Password Start -->
+        <tr>
+            <td><span>Forgot Password</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>Forgot/Password
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"></span>
+                            {<br>
+                            "EmailORMobile" : "joshipooja882@gmail.com",<br>
+                            "TransactionType" : "For Forgot Password"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_usermaster, sp_POST_OTP</td>
+            <td>
+                <span class="shortDescription">Verify Email or Mobile and then send EMail and SMS OTP</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>Forgot Password</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>Forgot/Password/update
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"></span>
+                            {<br>
+                            "OTPLogID": "155",<br>
+                            "OTP": "212713",<br>
+                            "Password": "123"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_usermaster, sp_POST_OTP_Verification</td>
+            <td>
+                <span class="shortDescription">Verify OTP then Update Password</span>
+            </td>
+        </tr>
+
+
+
+        <!-- Forgot Password End -->
+
+        <tr>
+            <td><span>Resend Same OTP</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>single/generate/otp/:UserID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"></span>
+                            {<br>
+
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_usermaster, sp_POST_OTP_Verification</td>
+            <td>
+                <span class="shortDescription">Resend Same OTP for eamail and password</span>
+            </td>
+        </tr>
+        <!-- Demo End-->
+    </table>
+</body>
+
+</html>

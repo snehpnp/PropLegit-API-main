@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #30fa08;
+            color: black;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('LoanPropertyDocument.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Loan Property Document - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Loan Property Document start-->
+
+        <!-- View Loan Document STart -->
+        <tr>
+            <td><span>Loan Property Document</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>loan/application/Documents/AppID/:AppID?DocumentStatus=Reviewed
+            </td>
+            <td rowspan="1">sp_View_LoanPropertyDocument</td>
+            <td>
+                <span class="shortDescription">View Loan Property Document & Status by AppID</span>
+            </td>
+        </tr>
+        <!-- View Loan Document STart -->
+
+
+        <!-- Loan Property Document status change to rEview start-->
+        <tr>
+            <td><span>Loand Property Document Status</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>loan/property/document/reviewed/:PropertyID/:DocumentID
+            </td>
+            <td rowspan="1">tbl_PropertyDocument</td>
+            <td>
+                <span class="shortDescription">Loan Property Document Status change to reviewed by Document ID and if
+                    All
+                    Document is Review then change Application Status to 'Title Search Completed'</span>
+            </td>
+        </tr>
+        <!-- Loan Property Document status change to rEview End-->
+
+        <!-- Loan Property Document Merge and save-->
+        <tr>
+            <td><span>Loand Property Document merge and save</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>loan/property/:PropertyID/document/multiple/upload
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>(form-data)
+                            </span><br>
+                            {<br>
+                            uploadfile: file<br>
+                            DocumentTypeId:11<br>
+                            DocumentSubTypeId:72<br>
+                            CreatedBy:20<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_PropertyDocument</td>
+            <td>
+                <span class="shortDescription">Loan Property document merge and save</span>
+            </td>
+        </tr>
+        <!-- Loan Property Document status change to rEview End-->
+
+        <!-- Loan Property Document End-->
+    </table>
+</body>
+
+</html>

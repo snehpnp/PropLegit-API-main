@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 23px;
+            color: #c932a8;
+            text-shadow: 1px 1px #e1dedead;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #79dd59;
+            color: #c932a8;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('NPODashboard.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit API Reference For NPO Dashboard</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- NPO Dashboard START -->
+        <tr>
+            <td><span>NPO Dashboard</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/dashboard/count/:UserID/:AfterDays
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="get"><u>Example:</u>
+                            </span><br>
+                            <span name="hostpath"></span>property/dashboard/count/116/10
+                            <span name="hostpath"></span>property/dashboard/count/116/10?StateID=7
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_View_NPO_Dashboard</td>
+            <td>
+                <span class="shortDescription">NPO Dashboard count, Amount<br>
+                    <b>(By DueDate, UserID, StateID)<br>
+                    </b>
+                    <i>- where StateID is optional</i>
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>Next Day Drop Down List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/dashboard/AfterDays/list
+            </td>
+            <td rowspan="1">.</td>
+            <td>
+                <span class="shortDescription">NPO Dashboard Next Days Dropdown list
+                </span>
+            </td>
+        </tr>
+        <!-- NPO Dashboard END -->
+
+
+        <!-- NPO GET Financial Year START  -->
+        <tr>
+            <td><span>Financial Year List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>FinancialYear/list
+            </td>
+            <td rowspan="1">ufTableOfFinancialYear</td>
+            <td>
+                <span class="shortDescription">Financial Year list
+                </span>
+            </td>
+        </tr>
+        <!-- NPO GET Financial Year END  -->
+    </table>
+</body>
+
+</html>

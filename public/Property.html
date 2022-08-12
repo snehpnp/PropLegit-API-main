@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #8b6d00;
+            color: mediumspringgreen;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('Property.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Property- API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Property Type Start -->
+        <tr>
+            <td>Property Type</td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>propertytype/list<br>
+                <span name="hostpath"></span>propertytype/list?IsOpenLand=false
+            </td>
+            <td rowspan="1">tblPropertyType</td>
+            <td>
+                <span class="shortDescription">
+                    Property List Display
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>Property Type</td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>propertytype/list/:PropertyTypeID
+            </td>
+            <td rowspan="1">tblPropertyType</td>
+            <td>
+                <span class="shortDescription">
+                    Property List Display by Property ID
+                </span>
+            </td>
+        </tr>
+        <!-- Property Type END -->
+
+        <!-- Property start -->
+        <tr>
+            <td>Property</td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/list<br>PublicNotice
+                <span name="hostpath"></span>property/list/:UserId
+            </td>
+            <td rowspan="1">tbl_PropertyMaster</td>
+            <td>
+                <span class="shortDescription">
+                    Display No of Property by StateID
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>Property</td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/list/:StateID
+            </td>
+            <td rowspan="1">tbl_PropertyMaster<br>
+                tbl_PropertyOtherDetails</td>
+            <td>
+                <span class="shortDescription">
+                    Display Property list by StateID
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>Property</td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u></span><br>
+                            <a href="/Project.html" target="_blank">More Info</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyMaster<br>
+                sp_POST_PropertyInCharge_Ownership
+
+            </td>
+            <td>
+                <span class="shortDescription">
+                    Add new Property
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>Property</td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>property/update/:PropertyID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="put"><u>Request Data:</u></span><br>
+                            <a href="/Project.html" target="_blank">More Info</a>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_PropertyMaster<br>
+                sp_POST_PropertyInCharge_Ownership</td>
+            <td>
+                <span class="shortDescription">
+                    Update Property
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>Property</td>
+            <td><span class="delete">DELETE</span></td>
+            <td>
+                <span name="hostpath"></span>property/delete/:PropertyID
+            </td>
+            <td rowspan="1">tbl_PropertyMaster</td>
+            <td>
+                <span class="shortDescription">
+                    InActive Property
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>Property</td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/view/:PropertyID
+            </td>
+            <td rowspan="1">tbl_PropertyMaster<br>
+                tbl_PropertyOtherDetails<br>
+                tbl_PropertyInCharge<br>
+                tbl_PropertyOwnership</td>
+            <td>
+                <span class="shortDescription">
+                    Property ALL Detail By Property ID
+                </span>
+            </td>
+        </tr>
+        <!-- Property end -->
+
+
+    </table>
+</body>
+
+</html>

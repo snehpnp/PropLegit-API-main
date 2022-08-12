@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #5f4b8bff;
+            color: #e69a8dff;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('PropertyRent_Rolebase.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Rolebase Property Rent - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Property Rent Count START-->
+        <tr>
+            <td><span>No of Property Rent
+                    <br><b>(Receivable and Payable)</b>
+                </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/Rent/Count/User/:UserID/:AfterDays
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="get"><u>Example:</u>
+                            </span><br>
+                            <span name="hostpath"></span>property/Rent/Count/User/116/10
+                            <span name="hostpath"></span>property/Rent/Count/User/116/10?StateID=24
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_Rent_Count_VTDS</td>
+            <td>
+                <span class="shortDescription">View Property Rent Count by User Wise</span>
+            </td>
+        </tr>
+
+        <!-- Property Rent Count End -->
+
+
+        <!-- View Property Rent start-->
+        <tr>
+            <td><span>No of Property Rent
+                    <br><b>(Receivable)</b>
+                </span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/Rent/Receivable/:DistrictID/User/:UserID/:AfterDays
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "PageSize": 10,<br>
+                            "PageNo": 1,<br>
+                            "Ascending": false,<br>
+                            "SortBy": "PropertyRentID",<br>
+                            "FilterArray": [<br>
+                            {<br>
+                            "field": "DistrictID",<br>
+                            "operator": "eq",<br>
+                            "value": 10<br>
+                            }, {<br>
+                            "field": "RentDueDate",<br>
+                            "operator": "lte",<br>
+                            "value": "2021-03-24"<br>
+                            }<br>
+                            ]<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_Rent_List_By_UserID</td>
+            <td>
+                <span class="shortDescription">View Property Rent by user and District ID
+                    <br>Paging,
+                    <br>Sorting (Single Sorting),
+                    <br>Searching (Multiple Search availabe)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>No of Property Rent
+                    <br><b>(Payable)</b>
+                </span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/Rent/Payable/:DistrictID/User/:UserID/:AfterDays
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "PageSize": 10,<br>
+                            "PageNo": 1,<br>
+                            "Ascending": false,<br>
+                            "SortBy": "PropertyRentID",<br>
+                            "FilterArray": [<br>
+                            {<br>
+                            "field": "DistrictID",<br>
+                            "operator": "eq",<br>
+                            "value": 10<br>
+                            }, {<br>
+                            "field": "RentDueDate",<br>
+                            "operator": "lte",<br>
+                            "value": "2021-03-24"<br>
+                            }<br>
+                            ]<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_Rent_List_By_UserID</td>
+            <td>
+                <span class="shortDescription">View Property Rent by user and District ID
+                    <br>Paging,
+                    <br>Sorting (Single Sorting),
+                    <br>Searching (Multiple Search availabe)
+                </span>
+            </td>
+        </tr>
+        <!-- View Property Tax end -->
+
+        <!-- View Property Rent List By Property START -->
+        <tr>
+            <td><span>Rent List By Property</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/pending/rent/View/:PropertyID
+
+            </td>
+            <td rowspan="1">vw_PropertyAllRent_With_Tenant</td>
+            <td>
+                <span class="shortDescription">Rent List By Property with Tenant Details
+                </span>
+            </td>
+        </tr>
+        <!-- View Property Rent List By Property END -->
+    </table>
+</body>
+
+</html>

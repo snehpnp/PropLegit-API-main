@@ -1,0 +1,1485 @@
+****************************************
+
+=> Date : Mon Mar 07 2022 06:53:56 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/login/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:53:56 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"65","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/login/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:26 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:26 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"34","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"267-LYCs1bOJUSKzyIGjXbd58CNF9uU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:28 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:28 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:28 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:28 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"33e-b3Qq0hyQ1SU8WpR9JW65NED/sm8\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:30 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:30 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"application/json, text/javascript, */*; q=0.01","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/Admin/2151?_=1646636036940"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {"_":"1646636036940"}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:31 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:32 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:54:32 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"macOS\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:58:36 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/login/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:58:36 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"65","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/login/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:58:51 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:58:51 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"34","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:13 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:13 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"34","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:14 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:14 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:14 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:14 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:14 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:14 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"267-wP4DAi06MvyHwUzPyZnN3o58WKM\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:15 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:15 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:16 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:16 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"33e-b3Qq0hyQ1SU8WpR9JW65NED/sm8\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:19 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:19 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"application/json, text/javascript, */*; q=0.01","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/Admin/2151?_=1646636319745"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {"_":"1646636319745"}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:20 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:21 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 06:59:21 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:02 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:02 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:02 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:02 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:02 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"267-+kjz29s7lPubaFHcV9iJgczk1+4\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:02 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:04 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:04 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:05 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:05 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"33e-b3Qq0hyQ1SU8WpR9JW65NED/sm8\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:07 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"267-+kjz29s7lPubaFHcV9iJgczk1+4\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:07 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:07 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:07 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:08 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"33e-b3Qq0hyQ1SU8WpR9JW65NED/sm8\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:10 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:11 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:11 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"application/json, text/javascript, */*; q=0.01","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/Admin/2151?_=1646637132705"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {"_":"1646637132705"}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:11 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:11 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:12 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 07:12:12 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:16:56 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/login/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:16:56 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"65","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/login/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:22 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:22 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"34","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/login/otp/verify"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"267-iNwHNygJeqBCiI94lKoe6cQjh8M\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:24 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:24 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:25 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:25 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"33e-b3Qq0hyQ1SU8WpR9JW65NED/sm8\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"application/json, text/javascript, */*; q=0.01","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/Admin/2151?_=1646648206761"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {"_":"1646648206761"}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:28 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:29 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:29 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:44 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:44 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Viewloan/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:44 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Viewloan/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:44 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:45 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"987-OxCfXL9LNqgqUiMSTfrB71jsvpk\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:46 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Documents/AppID/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:46 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/getdropdownstate/5"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:46 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Documents/AppID/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:17:46 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/getdropdownstate/5"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:16 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Documents/AppID/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:16 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"34a-j0AFHt5IfJrQuoNlavVD64Ha4TI\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Documents/AppID/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:17 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:17 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"987-OxCfXL9LNqgqUiMSTfrB71jsvpk\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:18 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"34a-j0AFHt5IfJrQuoNlavVD64Ha4TI\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Documents/AppID/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:18 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/getdropdownstate/5"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:18 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"96-qj5IUazP4sO7+HNJePX1vUg2E1I\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/getdropdownstate/5"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:19 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/pvr/createBy/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:19 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"691","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/pvr/createBy/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:20 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/pvr/Genrate/merge/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:20 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/pvr/Genrate/merge/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:26 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:26 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"987-OxCfXL9LNqgqUiMSTfrB71jsvpk\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/details/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Documents/AppID/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/getdropdownstate/5"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"34a-j0AFHt5IfJrQuoNlavVD64Ha4TI\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/Documents/AppID/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:27 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"96-qj5IUazP4sO7+HNJePX1vUg2E1I\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/getdropdownstate/5"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:30 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"PUT","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/status/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:30 GMT+0000 (Greenwich Mean Time)
+=> Request Type : PUT
+=> Request Header : {"connection":"keep-alive","content-length":"33","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/status/2387"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:31 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:31 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:31 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"application/json, text/javascript, */*; q=0.01","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/Admin/2151?_=1646648206762"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {"_":"1646648206762"}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:32 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:32 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:32 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:32 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:37 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/property/2647/Document/view/4737"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 10:18:37 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/property/2647/Document/view/4737"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"267-+kjz29s7lPubaFHcV9iJgczk1+4\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/user/list/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:43 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:43 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:44 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:22:44 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"33e-b3Qq0hyQ1SU8WpR9JW65NED/sm8\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/loantype/PVR/status/2151"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:27:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"application/json, text/javascript, */*; q=0.01","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/View/Admin/2151?_=1646652161458"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {"_":"1646652161458"}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:27:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:27:23 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"25c-bKb0gNuTszAFl/RJBr6PJ01gftU\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Property/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:27:24 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"GET","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:27:24 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","if-none-match":"W/\"17c-4NY2T0AwQxYwKbXDiDOG1UuT/eA\"","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/application/types"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:27:25 GMT+0000 (Greenwich Mean Time)
+=> Request Type : OPTIONS
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","access-control-request-method":"POST","access-control-request-headers":"access-control-allow-methods,access-control-allow-origin,content-type","origin":"https://qa.proplegit.com","sec-fetch-mode":"cors","sec-fetch-site":"same-site","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Mon Mar 07 2022 11:27:25 GMT+0000 (Greenwich Mean Time)
+=> Request Type : POST
+=> Request Header : {"connection":"keep-alive","content-length":"148","content-type":"application/json","accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9,mr;q=0.8","host":"qaapi.proplegit.com","referer":"https://qa.proplegit.com/","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"","sec-ch-ua-mobile":"?0","access-control-allow-methods":"GET, POST, PUT, DELETE, OPTIONS, HEAD","access-control-allow-origin":"http://localhost:4200","sec-ch-ua-platform":"\"Windows\"","origin":"https://qa.proplegit.com","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","x-original-url":"/api/loan/Dashboard/Count"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+

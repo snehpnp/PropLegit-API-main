@@ -1,0 +1,44 @@
+****************************************
+
+=> Date : Fri Apr 22 2022 03:42:52 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36","x-original-url":"/robots.txt"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Fri Apr 22 2022 04:30:58 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15","x-original-url":"/"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Fri Apr 22 2022 17:20:48 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"identity","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36","x-original-url":"/.git/HEAD"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Fri Apr 29 2022 19:39:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept-encoding":"gzip","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0","x-original-url":"/wp-login.php"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+

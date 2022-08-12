@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #058840;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('PropertyTenant.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Property Tenant - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Property Tenant Start -->
+        <!-- Add tanant -->
+        <tr>
+            <td><span>Property Tenant</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tenant/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data: (form-data)</u>
+                            </span><br>
+                            {<br>
+                            Description:file description of Contract Document details<br>
+                            UserID: 1<br>
+                            FileName:Myt4e12st.pdf<br>
+                            FileType:PDF<br>
+                            uploadfile:file<br>
+                            TenantName:Pooja Joshi<br>
+                            TenantAddress:Porbandar<br>
+                            TenantEmail:joshipooja882@gmail.com<br>
+                            TenantMobile:8490999006<br>
+                            RentType:Receivable<br>
+                            RentBasedOn:Month wise<br>
+                            ContractStartDate:2019-06-18<br>
+                            ContractMonth:12<br>
+                            MonthlyORDailyRent:10000<br>
+                            RentedSpaceInSqmtr:5000<br>
+                            AdvanceDeposite:10000<br>
+                            RentDuration:1<br>
+                            RentDueDay:20 // every month 20th date - we take rent from tenant<br>
+                            BankName:SBI<br>
+                            BankAccountName:AccoName01<br>
+                            GSTNumber:01GSTNumber01<br>
+                            BankAccountNumber:0123AccountNumber<br>
+                            IFSCCODE:SBIIFSCCODE<br>
+                            MICRCODE:MICRCODESBI<br>
+                            TransactionSMSMobileNo:1234<br>
+                            Cheque_Favour_OF:Cheque_Khana<br>
+                            SGST:9<br>
+                            CGST:12<br>
+                            IGST:90<br>
+                            CreatedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_Check_PropertyAvailabilityForRent, sp_POST_PropertyTenant, sp_POST_PropertyDocument,
+                tbl_PropertyTenant</td>
+            <td>
+                <span class="shortDescription">Add Property Tenant</span>
+            </td>
+        </tr>
+
+        <!-- Check Property Avability -->
+        <tr>
+            <td><span>Property Tenant check</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tenant/check
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "ContractStartDate":"2019-06-18", <span class="Required"> Required</span><br>
+                            "ContractEndDate":"2020-05-18", <span class="Required"> Required</span><br>
+                            "RentedSpaceInSqmtr":10000,<br>
+                            "PropertyTenantID":2 <span class="Required"> optional</span><br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_Check_PropertyAvailabilityForRent</td>
+            <td>
+                <span class="shortDescription">Check Property Availability For Rent by Property ID</span>
+            </td>
+        </tr>
+
+        <!-- Update tanant -->
+        <tr>
+            <td><span>Property Tenant Update</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tenant/update/:PropertyTenantID?FileExistenceCheck=0
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="put"><u>Request Data: (form-data)</u>
+                                <br>FileExistenceCheck = 1 (if file exist then we can't save data)
+                                <br>FileExistenceCheck = 0 (if file exist then we can save data)
+                            </span><br>
+                            {<br>
+                            Description:file description of demand notice<br>
+                            UserID: 1<br>
+                            FileName:Myt4e12st.pdf<br>
+                            FileType:PDF<br>
+                            uploadfile:file<br>
+                            TenantName:Pooja Joshi<br>
+                            TenantAddress:Porbandar<br>
+                            TenantEmail:joshipooja882@gmail.com<br>
+                            TenantMobile:8490999006<br>
+                            RentType:Receivable<br>
+                            RentBasedOn:Month wise<br>
+                            ContractStartDate:2019-06-18<br>
+                            ContractMonth:12<br>
+                            MonthlyORDailyRent:10000<br>
+                            RentedSpaceInSqmtr:5000<br>
+                            AdvanceDeposite:10000<br>
+                            RentDuration:1<br>
+                            RentDueDay:20 // every month 20th date - we take rent from tenant<br>
+                            BankName:SBI<br>
+                            BankAccountName:AccoName01<br>
+                            GSTNumber:01GSTNumber01<br>
+                            BankAccountNumber:0123AccountNumber<br>
+                            IFSCCODE:SBIIFSCCODE<br>
+                            MICRCODE:MICRCODESBI<br>
+                            TransactionSMSMobileNo:1234<br>
+                            Cheque_Favour_OF:Cheque_Khana<br>
+                            SGST:9<br>
+                            CGST:12<br>
+                            IGST:90<br>
+                            ModifiedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_Check_PropertyAvailabilityForRent, sp_POST_PropertyDocument, tbl_PropertyTenant</td>
+            <td>
+                <span class="shortDescription">Update Property Tenant</span>
+            </td>
+        </tr>
+
+        <!-- Tenant List Start -->
+        <tr>
+            <td><span>Property Tenant List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tenant/list
+            </td>
+            <td rowspan="1">vw_PropertyTenantRent</td>
+            <td>
+                <span class="shortDescription">Display Property Tenant List</span>
+            </td>
+        </tr>
+        <!-- Tenant List End -->
+
+
+        <!-- Tenant Disabled Start -->
+        <tr>
+            <td><span>Property Tenant</span></td>
+            <td><span class="delete">DELETE</span></td>
+            <td>
+                <span name="hostpath"></span>property/tax/delete/:PropertyTaxID
+            </td>
+            <td rowspan="1">tbl_PropertyTenant</td>
+            <td>
+                <span class="shortDescription">Disable Property Tenant By ID</span>
+            </td>
+        </tr>
+        <!-- Tenant Disabled End -->
+
+        <!-- Tenant Contract Cancel Start -->
+        <tr>
+            <td><span>Tenant Contract Cancel</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>property/tenant/ContractCancel/:PropertyTenantID
+            </td>
+            <td rowspan="1">tbl_PropertyTenant</td>
+            <td>
+                <span class="shortDescription">Tenant Contract Cancel by PropertyTenantID</span>
+            </td>
+        </tr>
+        <!-- Tenant Contract Cancel End -->
+
+        <!--  Property Tenant End -->
+
+        <!-- Property Tenant's rent Details Start -->
+        <tr>
+            <td><span>Property Rent</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/rent/view/:PropertyTenantID
+            </td>
+            <td rowspan="1">tbl_PropertyTenant, tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Disable Property Tenant and it's Rent History.</span>
+            </td>
+        </tr>
+        <!-- Property Tenant's rent Details END -->
+
+
+        <!-- Property Rent Invoice Upload Start -->
+        <tr>
+            <td><span>Property Rent</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/rent/Upload/invoice/:PropertyRentID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            {<br>
+                            Description:file description of demand notice<br>
+                            UserID: 1<br>
+                            FileType:PDF<br>
+                            uploadfile:file<br>
+                            InvoiceDate:2020-06-12<br>
+                            InvoiceAmount:11000<br>
+                            CreatedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_PropertyTenant, tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Upload property invoice only for Rent type is Payable</span>
+            </td>
+        </tr>
+        <!-- Property rent invoice Upload -->
+
+        <!-- Property Rent Receipt Upload Start -->
+        <tr>
+            <td><span>Property Rent</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/rent/Upload/receipt/:PropertyRentID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            {<br>
+                            Description:file description of demand notice<br>
+                            UserID: 1<br>
+                            AmountPay: 10000<br>
+                            FileType:PDF<br>
+                            uploadfile:file<br>
+                            AmountFromAdvance:200<br>
+                            PaymentDate:2020-06-13<br>
+                            ChequeNo:ChequeNo<br>
+                            ChequeName:ChequeName<br>
+                            BankName:BankName<br>
+                            BankBranchName:BankBranchName<br>
+                            TransactionID:TransactionID<br>
+                            WalletName:WalletName<br>
+                            ModifiedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_PropertyTenant, tbl_PropertyTax, sp_POST_PropertyRentReceipt</td>
+            <td>
+                <span class="shortDescription">Upload property Receipt only for Rent type is Payable</span>
+            </td>
+        </tr>
+        <!-- Property rent Receipt Upload -->
+
+        <!-- Property Rent Receipt Genrate Start -->
+        <tr>
+            <td><span>Property Rent</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/rent/generate/receipt/:PropertyRentID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data</u>
+                            </span><br>
+                            {<br>
+                            "AmountFromAdvance":200,<br>
+                            "AmountPay": 10000<br>
+                            "PaymentDate":"2020-06-13",<br>
+                            "ModeOfPayment":"ModeOfPayment",<br>
+                            "ChequeNo":"ChequeNo",<br>
+                            "ChequeName":"ChequeName",<br>
+                            "BankName":"BankName",<br>
+                            "BankBranchName":"BankBranchName",<br>
+                            "TransactionID":"TransactionID",<br>
+                            "WalletName":"WalletName",<br>
+                            "ModifiedBy":1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tbl_PropertyTenant, tbl_PropertyTax, sp_POST_PropertyRentReceipt</td>
+            <td>
+                <span class="shortDescription">Genrate property Receipt only for Rent type is Receivable</span>
+            </td>
+        </tr>
+        <!-- Property rent Receipt Genrate -->
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 23px;
+            color: #90dd8f;
+            text-shadow: 1px 1px #261717ad;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0d0e0c;
+            color: #90dd8f;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('Trust.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit API Reference For Trust, Trustee and Trust Property</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- TRUST USER Type START  -->
+
+        <tr>
+            <td><span>Trust User Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>trust/user/type
+            </td>
+            <td rowspan="1">TrusteeUserType</td>
+            <td>
+                <span class="shortDescription">
+                    Trust user type list
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST USER Type END  -->
+
+        <!-- TRUST and  TrusteeUser Add START  -->
+
+        <tr>
+            <td><span>Add Trust and Trustee</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>trust/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            {<br>
+                            "TrustName" : "TrustName",<br>
+                            "RegistrationORNondhniNo" : "RegistrationORNondhniNo",<br>
+                            "RegistrationDate": "2021-10-10",<br>
+                            "TrustAddress" : "TrustAddress",<br>
+                            "TrustEmailId" : "TrustEmailId",<br>
+                            "TrustPhoneNo" : "TrustPhoneNo",<br>
+                            "ProcessAppointmentTrustee" : "ProcessAppointmentTrustee",<br>
+                            "TrusteeUsers" : [{<br>
+                            "TrusteeUsertypeID" : 1,<br>
+                            "Name" : "Trustee1",<br>
+                            "Mobile" : "8490999006",<br>
+                            "Email" : "joshipooja882@gmail.com",<br>
+                            "Address" : "Address",<br>
+                            "StartDate" : "2021-10-10"<br>
+                            },<br>
+                            {<br>
+                            "TrusteeUsertypeID" : 2,<br>
+                            "Name" : "Trustee2",<br>
+                            "Mobile" : "8490999006",<br>
+                            "Email" : "joshipooja882@gmail.com",<br>
+                            "Address" : "Address",<br>
+                            "StartDate" : "2021-10-10"<br>
+                            },<br>
+                            {<br>
+                            "TrusteeUsertypeID" : 3,<br>
+                            "Name" : "Trustee3",<br>
+                            "Mobile" : "8490999006",<br>
+                            "Email" : "joshipooja882@gmail.com",<br>
+                            "Address" : "Address",<br>
+                            "StartDate" : "2021-10-10"<br>
+                            }<br>
+                            ],<br>
+                            "CreatedBy": 20<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_TrustMaster</td>
+            <td>
+                <span class="shortDescription">
+                    Add Trust and Trustee Details then <br>
+                    send Email/SMS to only <br>
+                    Manager-Mantri and CA-Auditor
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST and  TrusteeUser Add END  -->
+
+        <!-- TRUST and  TrusteeUser View START  -->
+
+        <tr>
+            <td><span>View Trust and Trustee</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>trust/view/:TrustID
+            </td>
+            <td rowspan="1">view_TrustMaster</td>
+            <td>
+                <span class="shortDescription">
+                    View Trust and Trustee Details By <br>
+                    TrustID - <b>Basic details</b>
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST and  TrusteeUser View END  -->
+
+        <!-- TRUST list by USerID START  -->
+
+        <tr>
+            <td><span>Trust List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>trust/list/:UserID
+            </td>
+            <td rowspan="1">view_TrustMaster</td>
+            <td>
+                <span class="shortDescription">
+                    Trust List By UserID
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST list by USerID END  -->
+
+        <!-- TRUST Property list by TrustID START  -->
+
+        <tr>
+            <td><span>Trust Property list</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>trust/property/view/:TrustID
+            </td>
+            <td rowspan="1">view_TrustMaster</td>
+            <td>
+                <span class="shortDescription">
+                    Trust Property List By TrustID
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST Property list by TrustID END  -->
+
+        <!-- TRUST Property Select START  -->
+
+        <tr>
+            <td><span>Select Property For Trust</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>trust/property/select
+            </td>
+            <td rowspan="1">view_TrustMaster</td>
+            <td>
+                <span class="shortDescription">
+                    Select Property For Trust
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST Property Select END  -->
+
+        <!-- TRUST Property Select START  -->
+
+        <tr>
+            <td><span>Add Property For Trust</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>trust/property/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            {<br>
+                            "TrustID" : 2,<br>
+                            "PropertyID" : 153,<br>
+                            "CreatedBy": 20<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_Trust_Property</td>
+            <td>
+                <span class="shortDescription">
+                    Add trust Property
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST Property Select END  -->
+
+        <!-- TRUST USER Type START  -->
+
+        <tr>
+            <td><span>Remove Property From Trust</span></td>
+            <td><span class="delete">DELETE</span></td>
+            <td>
+                <span name="hostpath"></span>trust/property/remove/:TrustID/:PropertyID
+            </td>
+            <td rowspan="1">TrustProperties</td>
+            <td>
+                <span class="shortDescription">
+                    Remove Property From Trust by TrustID and PropertyID
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST USER Type END  -->
+    </table>
+</body>
+
+</html>

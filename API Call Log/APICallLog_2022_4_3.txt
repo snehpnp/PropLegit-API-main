@@ -1,0 +1,22 @@
+****************************************
+
+=> Date : Wed Apr 27 2022 14:28:18 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate","host":"qaapi.proplegit.com","user-agent":"python-requests/2.27.1","x-original-url":"/"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Wed Apr 27 2022 14:28:18 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"*/*","accept-encoding":"gzip, deflate","host":"qaapi.proplegit.com","user-agent":"python-requests/2.27.1","x-original-url":"/.env"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+

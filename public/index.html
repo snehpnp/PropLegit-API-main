@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                hostpathElements[i].innerText = window.location + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Auth Start-->
+        <tr>
+            <td colspan="2"><span>Login/Sign In</span></td>
+            <td colspan="3"><a href="/Auth.html" target="_blank">Login, Sign In, Forgot Password</a></td>
+        </tr>
+        <!-- Auth End-->
+        <!-- Area -->
+        <tr>
+            <td colspan="2"><span>Area</span></td>
+            <td colspan="3"><a href="/Area.html" target="_blank">Area</a></td>
+        </tr>
+        <!-- Area End -->
+        <!-- Property START -->
+        <tr>
+            <td colspan="2"><span>Property</span></td>
+            <td colspan="3"><a href="/Property.html" target="_blank">Property</a></td>
+        </tr>
+        <!-- Property End -->
+        <!-- Property Photo Video START -->
+        <tr>
+            <td colspan="2"><span>Property Photo</span></td>
+            <td colspan="3"><a href="/PropertyPhotoVideo.html" target="_blank">Property Photo</a></td>
+        </tr>
+        <!-- Property Photo Video End -->
+        <!-- Property Only Document START -->
+        <tr>
+            <td colspan="2"><span>Property Only Document</span></td>
+            <td colspan="3"><a href="/PropertyOnlyDocument.html" target="_blank">Property Only Document</a></td>
+        </tr>
+        <!-- Property Only Document  End -->
+        <!-- Property Rolebase START -->
+        <tr>
+            <td colspan="2"><span>Property Rolebase</span></td>
+            <td colspan="3"><a href="/Property_Rolebase.html" target="_blank">Role Base Property</a></td>
+        </tr>
+        <!-- Property Rolebase End -->
+        <!-- Property Tax Rolebase START -->
+        <tr>
+            <td colspan="2"><span>Property Tax Rolebase</span></td>
+            <td colspan="3"><a href="/PropertyTax_Rolebase.html" target="_blank">Role Base Property Tax</a></td>
+        </tr>
+        <!-- Property Tax Rolebase End -->
+        <!-- Property Rent Rolebase START -->
+        <tr>
+            <td colspan="2"><span>Property Rent Rolebase</span></td>
+            <td colspan="3"><a href="/PropertyRent_Rolebase.html" target="_blank">Role Base Property Rent</a></td>
+        </tr>
+        <!-- Property Rent Rolebase End -->
+        <!-- Property Legal case Rolebase START -->
+        <tr>
+            <td colspan="2"><span>Property Legal case Rolebase</span></td>
+            <td colspan="3"><a href="/PropertyLegalcase_Rolebase.html" target="_blank">Role Base Property Legal case</a>
+            </td>
+        </tr>
+        <!-- Property Legal case Rolebase End -->
+        <!-- Legal Case START -->
+        <tr>
+            <td colspan="2"><span>Legal Case</span></td>
+            <td colspan="3"><a href="/PropertyLegal_Case.html" target="_blank">Legal Case</a></td>
+        </tr>
+        <!-- Legal Case End -->
+        <!-- Legal Case Document START -->
+        <tr>
+            <td colspan="2"><span>Legal Case Document</span></td>
+            <td colspan="3"><a href="/PropertyLegalCaseDocument.html" target="_blank">Legal Case Document</a></td>
+        </tr>
+        <!-- Legal Case End -->
+        <!-- NPO START -->
+        <tr>
+            <td colspan="2"><span>NPO Dashboard</span></td>
+            <td colspan="3"><a href="/NPODashboard.html" target="_blank">NPO Dashboard</a></td>
+        </tr>
+        <!-- NPO End -->
+        <!-- NPO Trust START -->
+        <tr>
+            <td colspan="2"><span>NPO Trust</span></td>
+            <td colspan="3"><a href="/Trust.html" target="_blank">NPO Trust</a></td>
+        </tr>
+        <!-- NPO Trust End -->
+        <!-- NPO Trust Meeting START -->
+        <tr>
+            <td colspan="2"><span>NPO Trust Meeting</span></td>
+            <td colspan="3"><a href="/Trust_Meeting.html" target="_blank">NPO Trust Meeting</a></td>
+        </tr>
+        <!-- NPO Trust Meeting End -->
+        <!-- NPO Trust Fund START -->
+        <tr>
+            <td colspan="2"><span>NPO Trust Fund</span></td>
+            <td colspan="3"><a href="/Trust_Fund.html" target="_blank">NPO Trust Fund</a></td>
+        </tr>
+        <!-- NPO Trust Fund End -->
+        <!-- NPO Trust IT Return START -->
+        <tr>
+            <td colspan="2"><span>NPO Trust IT REturn</span></td>
+            <td colspan="3"><a href="/Trust_IT_Return.html" target="_blank">NPO Trust IT Return</a></td>
+        </tr>
+        <!-- NPO Trust Fund End -->
+        <!-- NPO Trust Audit START -->
+        <tr>
+            <td colspan="2"><span>NPO Trust Audit</span></td>
+            <td colspan="3"><a href="/Trust_Audit.html" target="_blank">NPO Trust Audit</a></td>
+        </tr>
+        <!-- NPO Trust Audit End -->
+        <!-- NPO Trust Exam START -->
+        <tr>
+            <td colspan="2"><span>NPO Trust ExemCertificate</span></td>
+            <td colspan="3"><a href="/Trust_ExemCertificate.html" target="_blank">NPO Trust ExemCertificate</a></td>
+        </tr>
+        <!-- NPO Trust Exam End -->
+        <!-- User start -->
+        <tr>
+            <td rowspan="1">User</td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>user/list
+            </td>
+            <td rowspan="1">view_UserMaster</td>
+            <td>
+                <span class="shortDescription">
+                    Display User list
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="1">User</td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>user/list/:UserID
+            </td>
+            <td rowspan="1">view_UserMaster</td>
+            <td>
+                <span class="shortDescription">
+                    Display User list by UserID
+                </span>
+            </td>
+        </tr>
+
+        <!-- User end -->
+
+        <!-- Property Tax Case Start -->
+        <tr>
+            <td><span>Property Tax</span></td>
+            <td colspan="4"><a href="/PropertyTax.html" target="_blank">For Property Tax</a></td>
+        </tr>
+        <!-- Property Tax Case End -->
+
+        <!-- Property Tax Case Start -->
+        <tr>
+            <td><span>Property Tenant</span></td>
+            <td colspan="4"><a href="/PropertyTenant.html" target="_blank">For Property Tenant</a></td>
+        </tr>
+        <!-- Property Tax Case End -->
+        <!-- Property Loan APPlication START -->
+        <tr>
+            <td><span>Loan Application</span></td>
+            <td colspan="4"><a href="/LoanApplication.html" target="_blank">For Loan Application</a></td>
+        </tr>
+        <!-- Property Loan APPlication END -->
+
+        <!-- Property Loan PVR START -->
+        <tr>
+            <td><span>Loan PVR Application</span></td>
+            <td colspan="4"><a href="/LoanPVR.html" target="_blank">For Loan PVR</a></td>
+        </tr>
+        <!-- Property Loan PVR END -->
+
+        <!-- Property Loan PVR START -->
+        <tr>
+            <td><span>Loan Dashboard</span></td>
+            <td colspan="4"><a href="/LoanDashboard.html" target="_blank">For Loan Dashboard</a></td>
+        </tr>
+        <!-- Property Loan PVR END -->
+
+        <!-- Property Reminder Start -->
+        <tr>
+            <td><span>Reminder</span></td>
+            <td colspan="4"><a href="/Reminder.html" target="_blank">For Reminder</a></td>
+        </tr>
+        <!-- Property Reminder End -->
+
+        <!-- Property Notification Start -->
+        <tr>
+            <td><span>Notification</span></td>
+            <td colspan="4"><a href="/Notification.html" target="_blank">For Notification</a></td>
+        </tr>
+        <!-- Property Reminder End -->
+        <!-- Loan Property Document Start -->
+        <tr>
+            <td><span>Loan Property Document</span></td>
+            <td colspan="4"><a href="/LoanPropertyDocument.html" target="_blank">Loan Property Document</a></td>
+        </tr>
+        <!-- Loan Property Document End -->
+
+        <!-- Public Notice Start -->
+        <tr>
+            <td><span>Public Notice</span></td>
+            <td colspan="4"><a href="/PublicNotice.html" target="_blank">Public Notice</a></td>
+        </tr>
+        <!-- Public Notice End -->
+
+        <!-- Title Clear Certificate Start -->
+        <tr>
+            <td><span>Public Notice</span></td>
+            <td colspan="4"><a href="/TItleClearCertificate.html" target="_blank">Title Clear Certificate</a></td>
+        </tr>
+        <!-- Title Clear Certificate End -->
+
+        <!-- Loan Property Document Demo Start -->
+        <tr>
+            <td><span>For Demo</span></td>
+            <td colspan="4"><a href="/Demo.html" target="_blank">For Demo</a></td>
+        </tr>
+        <!-- Loan Property Document Demo End -->
+
+        <!-- Property Documnet start -->
+        <tr>
+            <td><span>Property Documnet</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/document/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data (Form-data):</u></span><br>
+                            {<br>
+                            "Description" : "Hi", <br>
+                            "UserID" : 1, <br>
+                            "FileType" : "Photo", <br>
+                            "FileName" : "Name345", <br>
+                            "uploadfile" : file, <br>
+                            "DocumentTypeId" : 1, <br>
+                            "DocumentSubTypeId" : 2, <br>
+                            "LegalCaseID" : 3, <br>
+                            "CreatedBy": 1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyDocument</td>
+
+            <td>
+                <span class="shortDescription">Add / Updoad Property Document</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Property Documnet</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/Document/View/:DocumentID
+            </td>
+            <td rowspan="1">view_PropertyDocument</td>
+
+            <td>
+                <span class="shortDescription">View Property Document By DocumentID</span>
+            </td>
+        </tr>
+        <!-- Property Documnet End -->
+
+        <!-- Drop Down Start -->
+        <tr>
+            <td><span>Document Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/DocumentType
+            </td>
+            <td rowspan="1">tbl_DropdownMaster<br>
+                tbl_DropdownItem</td>
+
+            <td>
+                <span class="shortDescription">Document Type List</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Document Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/DocumentType/:DropDownItemID
+            </td>
+            <td rowspan="1">tbl_DropdownMaster<br>
+                tbl_DropdownItem</td>
+
+            <td>
+                <span class="shortDescription">Document Type view By ID</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>Document Sub Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/DocumentSubType/:DropDownItemID
+            </td>
+            <td rowspan="1">tbl_DropdownMaster<br>
+                tbl_DropdownItem</td>
+
+            <td>
+                <span class="shortDescription">Document Sub Type list</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>File Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/FileType
+            </td>
+            <td rowspan="1">tbl_DropdownMaster<br>
+                tbl_DropdownItem</td>
+
+            <td>
+                <span class="shortDescription">File Type list</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>File Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/FileType/:DropDownItemID
+            </td>
+            <td rowspan="1">tbl_DropdownMaster<br>
+                tbl_DropdownItem</td>
+
+            <td>
+                <span class="shortDescription">File Type View By ID</span>
+            </td>
+        </tr>
+        <!-- Drop Down end -->
+
+        <!-- Lawyer Start -->
+        <tr>
+            <td><span>Lawyer</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>Lawyer/add
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u></span><br>
+                            {<br>
+                            "LawyerName" : "LawyerName", <br>
+                            "Firm" : "Firm", <br>
+                            "MobileNo" : "MobileNo",<br>
+                            "LandlineNo" : "LandlineNo",<br>
+                            "Fax" : "Fax", <br>
+                            "EmailId" : "EmailId",<br>
+                            "Website" : "Website", <br>
+                            "Address" : "Address", <br>
+                            "VillageId" : "1", <br>
+                            "TalukaId" : "1", <br>
+                            "DistrictId" : "1", <br>
+                            "City" : "Rajkot", <br>
+                            "PinCode" : "360575"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+            <td rowspan="1">sp_POST_Lawyer</td>
+
+            <td>
+                <span class="shortDescription">Lawyer Add</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Lawyer</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>Lawyer/list
+            </td>
+            <td rowspan="1">tblLaywer</td>
+
+            <td>
+                <span class="shortDescription">Lawyer list</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Lawyer</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>Lawyer/view/:LawyerId
+            </td>
+            <td rowspan="1">tblLaywer</td>
+
+            <td>
+                <span class="shortDescription">Lawyer list By ID</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Lawyer</span></td>
+            <td><span class="delete">DELETE</span></td>
+            <td>
+                <span name="hostpath"></span>Lawyer/delete/:LawyerId
+            </td>
+            <td rowspan="1">tblLaywer</td>
+
+            <td>
+                <span class="shortDescription">Lawyer delete</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Lawyer</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>Lawyer/update/:LawyerId
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="put"><u>Request Data:</u></span><br>
+                            {<br>
+                            "LawyerName" : "LawyerName", <br>
+                            "Firm" : "Firm", <br>
+                            "MobileNo" : "MobileNo",<br>
+                            "LandlineNo" : "LandlineNo",<br>
+                            "Fax" : "Fax", <br>
+                            "EmailId" : "EmailId",<br>
+                            "Website" : "Website", <br>
+                            "Address" : "Address", <br>
+                            "VillageId" : "1", <br>
+                            "TalukaId" : "1", <br>
+                            "DistrictId" : "1", <br>
+                            "City" : "Rajkot", <br>
+                            "PinCode" : "360575"<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tblLaywer</td>
+
+            <td>
+                <span class="shortDescription">Lawyer Update</span>
+            </td>
+        </tr>
+        <!-- Lawyer end -->
+
+
+
+        <!-- Company Start -->
+        <tr>
+            <td><span>Company</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>Company/new?FileExistenceCheck=1
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data: (form-data)</u>
+                                <br>FileExistenceCheck = 1 (if file exist then we can't save data)
+                                <br>FileExistenceCheck = 0 (if file exist then we can save data)
+                            </span><br>
+                            {<br>
+                            uploadfile:file<br>
+                            CompanyName:CompanyName<br>
+                            CompanyDescription:CompanyDescription<br>
+                            FileName:2.jpg<br>
+                            CreatedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">tblCompany_Master</td>
+
+            <td>
+                <span class="shortDescription">Add Company</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Company</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>company/list
+
+            </td>
+            <td rowspan="1">tblCompany_Master</td>
+
+            <td>
+                <span class="shortDescription">Company List</span>
+            </td>
+        </tr>
+        <!-- Company End -->
+
+    </table>
+</body>
+
+</html>

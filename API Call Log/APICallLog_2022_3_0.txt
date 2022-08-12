@@ -1,0 +1,253 @@
+****************************************
+
+=> Date : Sun Mar 13 2022 02:43:26 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"cache-control":"max-age=0","connection":"keep-alive","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","accept-encoding":"gzip","accept-language":"en;q=0.9","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36","dnt":"1","sec-gpc":"1","upgrade-insecure-requests":"1","x-original-url":"/"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 02:43:28 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","accept-encoding":"gzip","accept-language":"en","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36","upgrade-insecure-requests":"1","x-original-url":"/"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 02:43:34 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"cache-control":"max-age=0","connection":"keep-alive","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","accept-encoding":"gzip","accept-language":"en;q=0.9","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36","dnt":"1","sec-gpc":"1","upgrade-insecure-requests":"1","x-original-url":"/favicon.ico"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:37 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/xmlrpc.php?rsd"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {"rsd":""}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/blog/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/web/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/wordpress/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:38 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/website/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/wp/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/news/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/2020/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/2019/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/shop/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/wp1/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/test/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:39 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/wp2/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/site/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/cms/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+
+****************************************
+
+=> Date : Sun Mar 13 2022 05:21:40 GMT+0000 (Greenwich Mean Time)
+=> Request Type : GET
+=> Request Header : {"connection":"keep-alive","keep-alive":"300","content-length":"0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-US,en;q=0.5","host":"qaapi.proplegit.com","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.193 Safari/537.36","x-original-url":"/sito/wp-includes/wlwmanifest.xml"}
+=> Request Body : undefined
+=> Params : {}
+=> Query Params: {}
+
+****************************************
+

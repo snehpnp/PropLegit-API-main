@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 23px;
+            color: #B1624EFF;
+            text-shadow: 1px 1px #ffeb3b80;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #f6b076;
+            color: #B1624EFF;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('Trust_Audit.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit API Reference For Trust Audit</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- TRUST Audit List START  -->
+
+        <tr>
+            <td><span>Trust Audit List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>trust/Audit/list/:TrustID
+            </td>
+            <td rowspan="1">TrustAudits</td>
+            <td>
+                <span class="shortDescription">
+                    Trust Audit List by TrustID
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST Audit List End  -->
+
+        <!-- TRUST Audit Add START -->
+        <tr>
+            <td><span>Add Trust Audit</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>trust/add/Audit?FileExistenceCheck=1
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data: (form-data)</u>
+                                <br>FileExistenceCheck = 1 (if file exist then we can't save data)
+                                <br>FileExistenceCheck = 0 (if file exist then we can save data)
+                            </span><br>
+                            {<br>
+                            TrustID:8<br>
+                            FinYear:2000-2001<br>
+                            AuditDate:2021-04-02<br>
+                            TrusteeUserID:10<br>
+                            CreatedBy:20<br>
+                            FileName:Audit_Docum_1.pdf<br>
+                            FileType:PDF<br>
+                            Description:Trust Audit Document<br>
+                            uploadfile:file<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_TrustAudit</td>
+            <td>
+                <span class="shortDescription">
+                    Add Audit By TrustID
+                </span>
+            </td>
+        </tr>
+
+        <!-- TRUST After Meeting Add END -->
+
+    </table>
+</body>
+
+</html>

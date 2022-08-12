@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 23px;
+            color: #a2220c;
+            text-shadow: 1px 1px #e1dedead;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #adb1b2;
+            color: #a2220c;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('PropertyLegalcase_Rolebase.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Rolebase Property Legal Case - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Property Legal Case Count START-->
+        <tr>
+            <td><span>No of Property Legal Case
+                    <br><b>(Ongoing)</b>
+                </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/legalcase/Ongoing/Count/User/:UserID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="get"><u>Example:</u>
+                            </span><br>
+                            <span name="hostpath"></span>property/legalcase/Ongoing/Count/User/116
+                            <span name="hostpath"></span>property/legalcase/Ongoing/Count/User/116?StateID=7
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_LegalCase_Count_VTDS</td>
+            <td>
+                <span class="shortDescription">View Property Legal Case Count by User Wise</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>No of Property Legal Case
+                    <br><b>(Disposed)</b>
+                </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/legalcase/Disposed/Count/User/:UserID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="get"><u>Example:</u>
+                            </span><br>
+                            <span name="hostpath"></span>property/legalcase/Disposed/Count/User/116
+                            <span name="hostpath"></span>property/legalcase/Disposed/Count/User/116?StateID=7
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_LegalCase_Count_VTDS</td>
+            <td>
+                <span class="shortDescription">View Property Legal Case Count by User Wise</span>
+            </td>
+        </tr>
+        <!-- Property Legal Case Count End -->
+
+
+        <!-- View Property Legal Case start-->
+        <tr>
+            <td><span>No of Property Legal Case
+                    <br><b>(Ongoing)</b>
+                </span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/legalcase/Ongoing/:DistrictID/User/:UserID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "PageSize": 10,<br>
+                            "PageNo": 1,<br>
+                            "Ascending": false,<br>
+                            "SortBy": "CaseNumber",<br>
+                            "SearchWord": {<br>
+                            "CaseNumber":123<br>
+                            }<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_LegalCase_List_By_UserID</td>
+            <td>
+                <span class="shortDescription">View Property Legal Case by user and District ID
+                    <br>Paging,
+                    <br>Sorting (Single Sorting),
+                    <br>Searching (Multiple Search availabe)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>No of Property Legal Case
+                    <br><b>(Disposed)</b>
+                </span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/legalcase/Disposed/:DistrictID/User/:UserID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data:</u>
+                            </span><br>
+                            {<br>
+                            "PageSize": 10,<br>
+                            "PageNo": 1,<br>
+                            "Ascending": false,<br>
+                            "SortBy": "CaseNumber",<br>
+                            "SearchWord": {<br>
+                            "CaseNumber":123<br>
+                            }<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_LegalCase_List_By_UserID</td>
+            <td>
+                <span class="shortDescription">View Property Legal Case by user and District ID
+                    <br>Paging,
+                    <br>Sorting (Single Sorting),
+                    <br>Searching (Multiple Search availabe)
+                </span>
+            </td>
+        </tr>
+        <!-- View Property Tax end -->
+        <!-- View ongion case by PropertyID START-->
+        <tr>
+            <td><span>Property wise Ongoing case</b>
+                </span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/legalcase/Ongoing/:PropertyID
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="get"><u>Example:</u>
+                            </span><br>
+                            <span name="hostpath"></span>property/legalcase/Ongoing/100
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_GET_Property_ongoing_LegalCase_List</td>
+            <td>
+                <span class="shortDescription">View Property Legal Case Count by User Wise</span>
+            </td>
+        </tr>
+        <!-- View ongion case by PropertyID END-->
+    </table>
+</body>
+
+</html>

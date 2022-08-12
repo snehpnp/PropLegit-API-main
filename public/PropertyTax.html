@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proplegit - API Reference</title>
+
+    <style>
+        .header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #2196f3;
+            color: white;
+            text-align: center;
+        }
+
+        .delete {
+            color: red;
+            font-weight: 900;
+        }
+
+        .post {
+            color: green;
+            font-weight: 900;
+        }
+
+        .put {
+            color: orange;
+            font-weight: 900;
+        }
+
+        .get {
+            color: skyblue;
+            font-weight: 900;
+        }
+
+        .redlable {
+            background-color: #d9534f;
+            color: white;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+
+        .RequestBody {
+            background-color: floralwhite;
+            line-height: 27px;
+        }
+
+        .Required {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <script>
+
+        function documentReady() {
+            var hostpathElements = document.getElementsByName("hostpath");
+
+            // var hostpathElements2 = document.getElementsByName("hostpath2");
+            for (var i = 0; i < hostpathElements.length; i++) {
+                var BaseURL = window.location.href;
+                hostpathElements[i].innerText = BaseURL.replace('PropertyTax.html', '') + 'api/';
+            }
+            // for (var i = 0; i < hostpathElements2.length; i++) {
+            //     hostpathElements2[i].innerText = window.location + 'api2/';
+            // }
+
+            var tables = document.getElementsByName("table");
+            var table = tables[tables.length - 1];
+            var rows = table.rows;
+            for (var i = 1, td; i < rows.length; i++) {
+                td = document.createElement('td');
+                td.appendChild(document.createTextNode(i));
+                rows[i].insertBefore(td, rows[i].firstChild);
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="documentReady()">
+    <div class="header">Proplegit- Property Tax - API Reference</div>
+
+    <table align="center" name="table">
+        <tr>
+            <th>NO</th>
+            <th>API</th>
+            <th>TYPE</th>
+            <th>URL(s)</th>
+            <th>DB-TABLE</th>
+            <th>SHORT DESCRIPTION</th>
+        </tr>
+
+        <!-- Property Tax Type Start -->
+        <tr>
+            <td><span>Property Tax Type</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>Property/Tax/List/:PropertyTypeID
+            </td>
+            <td rowspan="1">sp_GET_PropertyTaxType</td>
+            <td>
+                <span class="shortDescription">Property Tax Type List</span>
+            </td>
+        </tr>
+        <!-- Property Tax Type End -->
+
+        <!-- Property Tax Case Start -->
+        <tr>
+            <td><span>Property Tax Last Year</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span
+                    name="hostpath"></span>property/LastFinancialTaxYear/:PropertyID/:PropertyTaxTypeID/:FinancialTaxYear
+            </td>
+            <td rowspan="1">sp_GET_PropertyTaxByFinancialTaxYear</td>
+            <td>
+                <span class="shortDescription">Display Property Tax Last year details</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Property Tax List</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tax/list
+            </td>
+            <td rowspan="1">tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Property Tax Listing</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Property Tax View</span></td>
+            <td><span class="get">GET</span></td>
+            <td>
+                <span name="hostpath"></span>property/tax/view/:PropertyTaxID
+            </td>
+            <td rowspan="1">tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Property Tax By ID</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Property Tax Add</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tax/add?FileExistenceCheck=1
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data: (form-data)</u>
+                                <br>FileExistenceCheck = 1 (if file exist then we can't save data)
+                                <br>FileExistenceCheck = 0 (if file exist then we can save data)
+                            </span><br>
+                            {<br>
+                            Description:file description of demand notice<br>
+                            UserID: 1<br>
+                            FileName:Myt4e12st.pdf<br>
+                            FileType:PDF<br>
+                            uploadfile:file<br>
+                            PropertyTaxTypeID:1<br>
+                            FinancialTaxYear:2009-2010<br>
+                            AmountDue:12000000<br>
+                            DueDate:2020-12-12<br>
+                            CreatedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyTax, sp_POST_PropertyDocument, tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Property Tax Add</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Property Tax Update</span></td>
+            <td><span class="put">PUT</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tax/update/:PropertyTaxID?FileExistenceCheck=1
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data: (form-data)</u>
+                                <br>FileExistenceCheck = 1 (if file exist then we can't save data)
+                                <br>FileExistenceCheck = 0 (if file exist then we can save data)
+                            </span><br>
+                            {<br>
+                            Description:file description of demand notice<br>
+                            UserID: 1<br>
+                            FileName:Myt4e12st.pdf<br>
+                            FileType:PDF<br>
+                            uploadfile:file<br>
+                            AmountDue:12000000<br>
+                            DueDate:2020-12-12<br>
+                            ModifiedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyDocument, tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Property Tax Update</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Property Tax Delete</span></td>
+            <td><span class="delete">DELETE</span></td>
+            <td>
+                <span name="hostpath"></span>property/tax/delete/:PropertyTaxID
+            </td>
+            <td rowspan="1">tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Disable Property Tax By ID</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>Property Tax Receipt</span></td>
+            <td><span class="post">POST</span></td>
+            <td>
+                <span name="hostpath"></span>property/:PropertyID/tax/:PropertyTaxID/receipt/upload?FileExistenceCheck=1
+                <table class="RequestBody">
+                    <tr>
+                        <td>
+                            <span class="post"><u>Request Data: (form-data)</u>
+                                <br>FileExistenceCheck = 1 (if file exist then we can't save data)
+                                <br>FileExistenceCheck = 0 (if file exist then we can save data)
+                            </span><br>
+                            {<br>
+                            Description:file description of demand notice<br>
+                            UserID: 1<br>
+                            FileName:Myt4e12st.pdf<br>
+                            FileType:PDF<br>
+                            uploadfile:file<br>
+                            NextDueDate:2021-12-12<br>
+                            ModeOfPayment:cheque<br>
+                            PaymentDate:2020-12-10<br>
+                            AmountPay:20000<br>
+                            ChequeNo:ChequeNo<br>
+                            ChequeName:ChequeName<br>
+                            BankName:BankName<br>
+                            BankBranchName:BankBranchName<br>
+                            TransactionID:TransactionID<br>
+                            WalletName:WalletName<br>
+                            CreatedBy:1<br>
+                            }<br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="1">sp_POST_PropertyDocument, tbl_PropertyTax</td>
+            <td>
+                <span class="shortDescription">Add/Edit Property receipt</span>
+            </td>
+        </tr>
+        <!-- Property Tax Case End -->
+
+    </table>
+</body>
+
+</html>
